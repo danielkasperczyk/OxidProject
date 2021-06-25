@@ -4,6 +4,10 @@
 ```
 npm install
 ```
+```
+in src/plugins/apollo.ts 
+change uri to Your graphlq uri
+```
 
 ### Compiles and hot-reloads for development
 ```
