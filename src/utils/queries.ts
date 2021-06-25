@@ -1,10 +1,11 @@
 import { gql } from 'graphql-tag';
 
 const GET_PRODUCTS = gql`
-  query {
-    products {
+  query($productName: String) {
+    products(filter: { title: { contains: $productName } }) {
       id
       title
+      shortDescription
       price {
         price
         currency {
@@ -25,6 +26,7 @@ const GET_PRODUCT = gql`
     product(productId: $productId) {
       id
       title
+      shortDescription
       price {
         price
         currency {

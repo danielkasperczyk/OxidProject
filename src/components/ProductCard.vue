@@ -1,11 +1,10 @@
 <template>
-  <v-card :max-width="250">
-    <v-img :src="product.imageGallery.images[0].image" />
+  <v-card :max-width="250" class="ma-3 d-flex flex-column">
+    <v-img :src="product.imageGallery.images[0].image" :height="200" />
     <v-card-title>{{ product.title }}</v-card-title>
+    <v-card-subtitle>{{ product.shortDescription }}</v-card-subtitle>
     <v-card-text class="pb-0">{{ getProductPrice }}</v-card-text>
-    <div class="d-flex justify-center pa-3">
-      <v-btn class="primary" block @click="productDetails">BUY</v-btn>
-    </div>
+    <div class="ma-5"></div>
   </v-card>
 </template>
 

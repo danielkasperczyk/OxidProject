@@ -5,7 +5,7 @@ import { createHttpLink } from 'apollo-link-http';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 
 const HttpLink = createHttpLink({
-  uri: 'https://www.kiratest03.food-eshop.de/graphql',
+  uri: 'http://a5c5d29c1c64.ngrok.io/oxidapigraphql/source/graphql',
 });
 
 const cache = new InMemoryCache();
